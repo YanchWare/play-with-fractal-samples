@@ -48,7 +48,7 @@ jobs:
 
       - name: Build with Gradle
         working-directory: livesystem-first/gcp/${{ inputs.sampleToRun }}
-        run: gradle clean test
+        run: gradle clean test jar
 
       - name: Deploy
         working-directory: livesystem-first/gcp/${{ inputs.sampleToRun }}
